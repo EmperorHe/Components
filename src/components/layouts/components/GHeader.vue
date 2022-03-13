@@ -36,7 +36,6 @@
         </div>
       </div>
       <div class="layout-cell header-user-wrap">
-        <g-user />
       </div>
     </div>
   </div>
@@ -45,12 +44,10 @@
 <script>
 import { mixin } from '@/utils/mixin.js'
 import SMenu from './menu.js'
-import GUser from './GUser'
 
 export default {
   components: {
-    SMenu,
-    GUser
+    SMenu
   },
   mixins: [mixin],
   props: {

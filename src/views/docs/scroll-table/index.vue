@@ -1,5 +1,5 @@
 <template>
-  <uev-docs title="表格不分页渲染组件" :markHtml="mark">
+  <uev-docs title="表格不分页渲染大量数据组件" :markHtml="mark">
     <div class="docs-wrap">
       <!-- 示例代码开始 -->
       <scroll-table
@@ -121,7 +121,7 @@ export default {
       for (let i = 0; i < 10000; i++) {
         const data = {
           id: i,
-          fwh: Math.floor((i / 10) + 1) + '0' + parseInt(Math.random() * 9 + 1),
+          fwh: i + 1,
           fwgn: gnArr[parseInt(i / gnArr.length) % gnArr.length],
           fwhx: hxArr[parseInt(i / hxArr.length) % hxArr.length],
           fwcx: cxArr[parseInt(i / cxArr.length) % cxArr.length],

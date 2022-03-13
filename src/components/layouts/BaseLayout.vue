@@ -47,14 +47,12 @@
       </div>
       <setting-drawer v-if="isDevEnv" />
     </div>
-    <iframe-message />
   </div>
 </template>
 
 <script>
 import GHeader from './components/GHeader' // 头部组件
 import GCont from './components/GCont' // 内容部分组件
-import IframeMessage from './components/IframeMessage.vue'
 import SideMenu from './components/SideMenu' // 菜单组件
 import SettingDrawer from './components/SettingDrawer' // 开发者设置主题组件
 import { mixin } from '@/utils/mixin' // 公共方法
@@ -68,8 +66,7 @@ export default {
     GHeader,
     GCont,
     SideMenu,
-    SettingDrawer,
-    IframeMessage
+    SettingDrawer
   },
   mixins: [mixin],
   props: {

@@ -48,7 +48,6 @@ moment.locale('zh-cn')
  * 给全局对象挂载必要的常用工具
  */
 Vue.prototype.$moment = moment
-Vue.prototype.$image = window._CONFIG['photoURL']
 
 const env = process.env.NODE_ENV
 

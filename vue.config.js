@@ -34,16 +34,7 @@ module.exports = {
       title: 'UEV',
       // 在这个页面中包含的块，默认情况下会包含
       // 提取出来的通用 chunk 和 vendor chunk。
-      chunks: ['chunk-vendors', 'chunk-common', 'index'],
-      // 配置CDN地址
-      cdn: {
-        css: [],
-        js: [
-          // '//unpkg.com/axios@0.21.1/dist/axios.min.js',
-          // '//unpkg.com/moment@2.29.1/moment.js',
-          // '//unpkg.com/echarts@5.1.2/dist/echarts.js'
-        ]
-      }
+      chunks: ['chunk-vendors', 'chunk-common', 'index']
     }
   },
   filenameHashing: true,
@@ -51,6 +42,8 @@ module.exports = {
   productionSourceMap: nodeEnv === 'development' || branchEnv === 'test',
   // 配置生产环境基础地址，（例如：publicPath: '/abc/'，则项目的访问地址为：http://xxxx.xxxx.xxxx.xxxx:xxxx/abc/）
   publicPath: './',
+  // 输出的位置
+  outputDir: 'docs',
   configureWebpack: config => {
     // 设置项目名称
     config.name = appName

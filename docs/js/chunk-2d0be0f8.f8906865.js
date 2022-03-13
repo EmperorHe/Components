@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d0be0f8"],{"2f3a":function(t,e,n){"use strict";n.r(e);var a={name:"Analysis"},s=n("2877"),i=Object(s.a)(a,(function(){var t=this.$createElement,e=this._self._c||t;return e("div",[e("zv-white-blog",{attrs:{title:"首页"}})],1)}),[],!1,null,"735a1340",null);e.default=i.exports}}]);
