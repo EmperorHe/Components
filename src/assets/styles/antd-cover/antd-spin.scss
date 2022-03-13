@@ -1,0 +1,21 @@
+.ant-spin-nested-loading > div > .ant-spin {
+	max-height: 100%;
+}
+.ant-popover-buttons {
+	&::after {
+		position: relative;
+		display: block;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		clear: both;
+		content: '';
+	}
+	button {
+		float: right;
+	}
+}
+.ant-popover-message-title {
+	max-width: 154px;
+	text-align: justify;
+}

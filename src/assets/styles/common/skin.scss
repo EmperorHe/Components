@@ -1,0 +1,54 @@
+body {
+	.zv-workbench-wrap {
+		.layout-header-dark {
+			background-color: #424242 !important;
+		}
+		.layout-left-menu-dark {
+			background-color: #424242;
+			.search-wrap {
+				background-color: #4d4d4d;
+			}
+			.menu-header {
+				color: #fff;
+			}
+		}
+	}
+	.menu-tree-wrap {
+		background-color: #fff;
+	}
+	.menu-tree-wrap-dark {
+		background-color: #424242;
+	}
+	.ant-menu-dark,
+	.ant-menu-dark .ant-menu-sub {
+		background: transparent;
+	}
+	.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+		background-color: #3d3d3d;
+		box-shadow: none;
+	}
+	.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container {
+		height: 44px;
+	}
+	.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+		line-height: 42px;
+	}
+	.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+		background-color: transparent;
+	}
+	.ant-menu-dark.ant-menu-submenu-popup {
+		background-color: #424242;
+	}
+	.ant-menu-inline,
+	.ant-menu-vertical,
+	.ant-menu-vertical-left {
+		border-right: 0;
+	}
+	.ant-menu-dark {
+		.ant-menu-vertical .ant-menu-submenu-selected,
+		.ant-menu-vertical-left .ant-menu-submenu-selected,
+		.ant-menu-vertical-right .ant-menu-submenu-selected {
+			color: #fff;
+		}
+	}
+}

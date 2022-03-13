@@ -1,0 +1,155 @@
+@charset "utf-8";
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+html,
+body #app,
+input,
+textarea,
+button,
+a {
+	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei', 微软雅黑, Arial, sans-serif;
+	color: #333;
+	word-break: break-all;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+button::-moz-focus-inner,
+input[type='reset']::-moz-focus-inner,
+input[type='button']::-moz-focus-inner,
+input[type='submit']::-moz-focus-inner,
+input[type='file'] > input[type='button']::-moz-focus-inner {
+	border: none;
+}
+.font_family {
+	font-family: 'font_family' !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ul,
+li {
+	list-style: none;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+a {
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+img,
+input[type='checkbox'],
+input[type='radio'],
+button {
+	border: 0;
+}
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='search'],
+input[type='tel'],
+input[type='number'] {
+	padding: 4px 5px;
+	line-height: 1;
+	vertical-align: middle;
+}
+textarea {
+	padding: 4px 5px;
+	resize: none;
+}
+input[type='checkbox'],
+input[type='radio'],
+button {
+	cursor: pointer;
+}
+.clearfix {
+	clear: both;
+}
+.clearfix::after {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	content: '';
+}
+.iconfont {
+	font-family: 'iconfont' !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 10px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+	display: none;
+	background: transparent;
+	border-radius: 0;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+	background: #c7d8e0;
+	border-radius: 0;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: transparent;
+}
+
+/**
+ * 全局小动画
+ */
+
+// 旋转180度
+.rotate-180 {
+	transform: rotateX(180deg);
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+	min-height: 200px;
+}
+.area-select-wrap {
+	display: none;
+}
+.multiple-select {
+	.ant-input,
+	.ant-select-selection {
+		min-height: 100px;
+	}
+	// .ant-select-selection__choice__remove {
+	//     display: none;
+	// }
+	// .ant-select-selection__choice {
+	//     padding: 0 10px 0 10px;
+	// }
+}
+.zv-common-blog-padding {
+	&::after {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 88px;
+		clear: both;
+		content: '';
+	}
+}

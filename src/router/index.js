@@ -1,20 +1,20 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
+import { baseRouterMap } from './routerConfig'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
-const routes = [
-  {
-    path: '/',
-    name: 'ShowTable',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ShowTable.vue')
-  }
-]
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
-const router = new VueRouter({
+export default new Router({
   mode: 'hash',
+  // mode: 'history', // cas 需要开启否则死循环
   base: process.env.BASE_URL,
-  routes
+  scrollBehavior: () => ({
+    y: 0
+  }),
+  routes: baseRouterMap
 })
-
-export default router

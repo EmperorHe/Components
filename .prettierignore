@@ -1,0 +1,4 @@
+*.vue
+package.json
+vue.config.js
+src/assets/**/*

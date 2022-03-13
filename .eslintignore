@@ -1,4 +1,10 @@
-dist
+build/*.js
+src/assets
+src/assets/*
 public
+public/*
+dist
+# mock
+# mock/*
 node_modules
-vue.config.js
+node_modules/*

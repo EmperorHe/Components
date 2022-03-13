@@ -1,0 +1,72 @@
+.ant-pagination-total-text {
+  margin-right: 12px;
+  color: #333;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  color: #333;
+}
+
+.ant-pagination-disabled {
+  color: #cfcfcf;
+}
+
+.ant-pagination.mini .ant-pagination-item,
+.ant-pagination-item {
+  min-width: 28px;
+  min-height: 28px;
+  margin: 3px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.ant-pagination-item-active {
+  background: #3296fa;
+
+  a {
+    color: #fff !important;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.ant-pagination-options-size-changer.ant-select {
+  margin-right: 16px;
+  margin-left: 12px;
+}
+
+.ant-select-sm .ant-select-selection--single {
+  height: 28px;
+  font-size: 12px;
+}
+
+.ant-select-sm .ant-select-selection__rendered {
+  margin-left: 12px;
+  line-height: 28px;
+}
+
+.ant-select-selection--single .ant-select-selection__rendered {
+  margin-right: 28px;
+}
+
+.ant-select-selection {
+  border: 1px solid #ddd;
+}
+
+.ant-select-sm .ant-select-arrow {
+  color: #a7a7a7;
+}
+
+.ant-pagination.mini .ant-pagination-options-quick-jumper {
+  height: 28px;
+  line-height: 28px;
+}
+
+.ant-pagination.mini .ant-pagination-options-quick-jumper input {
+  width: 52px;
+  height: 28px;
+  border: 1px solid #ddd;
+}

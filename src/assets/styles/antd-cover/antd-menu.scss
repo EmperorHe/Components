@@ -1,0 +1,114 @@
+.ant-menu-horizontal.ant-menu-light {
+	color: #fff;
+	background: transparent;
+	border-bottom: 0;
+	> .ant-menu-item:hover,
+	> .ant-menu-submenu:hover,
+	> .ant-menu-submenu-active,
+	> .ant-menu-item-open,
+	> .ant-menu-submenu-open,
+	> .ant-menu-item-selected,
+	> .ant-menu-submenu-selected {
+		background-color: #fff;
+		border-bottom: 0;
+	}
+	> .ant-menu-item,
+	> .ant-menu-submenu {
+		top: 0;
+		height: 100%;
+		line-height: 52px;
+		border-bottom: 0;
+	}
+}
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item > a {
+	color: #fff;
+}
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item {
+	&.ant-menu-item-selected > a {
+		color: $primary-color;
+	}
+}
+.ant-menu-horizontal.ant-menu-dark {
+	background: #424242;
+	border-bottom: 0;
+	> .ant-menu-item:hover,
+	> .ant-menu-submenu:hover,
+	> .ant-menu-submenu-active,
+	> .ant-menu-item-open,
+	> .ant-menu-submenu-open,
+	> .ant-menu-item-selected,
+	> .ant-menu-submenu-selected {
+		border-bottom: 0;
+	}
+	> .ant-menu-item,
+	> .ant-menu-submenu {
+		top: 0;
+		height: 100%;
+		line-height: 52px;
+		border-bottom: 0;
+	}
+}
+.ant-menu-inline.ant-menu-dark {
+	.ant-menu-sub {
+		background-color: #424242;
+	}
+}
+.ant-menu {
+	.font_family + span {
+		transition: opacity 0.3s;
+		& + i {
+			transition: opacity 0.1s;
+		}
+	}
+}
+.ant-menu-inline-collapsed {
+	width: 65px;
+	.font_family + span {
+		opacity: 0;
+		& + i {
+			opacity: 0;
+		}
+	}
+}
+.ant-menu-inline-collapsed > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+	padding: 0 24px !important;
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+	position: relative;
+	background-color: transparent;
+	border: 0 !important;
+	border-color: transparent;
+	border-radius: 0;
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 1px;
+		height: 24px;
+		margin: auto 0;
+		content: '';
+		background-color: #e6e9ea;
+	}
+}
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+	border-right: 0;
+}
+.ant-menu-dark .ant-menu-submenu-popup {
+	background-color: #424242;
+}
+.ant-menu-item > a {
+	text-decoration: none;
+}
+.ant-menu-horizontal {
+	.ant-menu-item,
+	.ant-menu-submenu {
+		margin-top: 0;
+	}
+}

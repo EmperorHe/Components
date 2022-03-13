@@ -1,0 +1,54 @@
+// 输出三角符号
+// 参数：角度、宽度、高度、颜色
+
+@mixin setHorn($horn, $w, $h, $c) {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  content: '';
+
+  @if $horn == left {
+    border-right: $w solid $c;
+    border-top: #{($h / 2)} solid transparent;
+    border-bottom: #{($h / 2)} solid transparent;
+  }
+
+  @else if $horn == top {
+    border-left: #{($w / 2)} solid transparent;
+    border-right: #{($w / 2)} solid transparent;
+    border-bottom: $h solid $c;
+  }
+
+  @else if $horn == right {
+    border-left: $w solid $c;
+    border-top: #{($h / 2)} solid transparent;
+    border-bottom: #{($h / 2)} solid transparent;
+  }
+
+  @else if $horn == bottom {
+    border-left: #{($w / 2)} solid transparent;
+    border-right: #{($w / 2)} solid transparent;
+    border-top: $h solid $c;
+  }
+
+  @else if $horn == leftTop {
+    border-left: $w solid $c;
+    border-bottom: $h solid transparent;
+  }
+
+  @else if $horn == leftBottom {
+    border-left: $w solid $c;
+    border-top: $h solid transparent;
+  }
+
+  @else if $horn == rightTop {
+    border-right: $w solid $c;
+    border-bottom: $h solid transparent;
+  }
+
+  @else if $horn == rightBottom {
+    border-right: $w solid $c;
+    border-top: $h solid transparent;
+  }
+}

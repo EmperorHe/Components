@@ -1,0 +1,45 @@
+@charset "utf-8";
+// 引入公共样式
+
+@import './common/common.scss';
+// 引入基于antd组件配合更换主题色产生的颜色设置
+
+@import './common/skin.scss';
+
+@import './common/animater.scss';
+
+@import './common/global.scss';
+
+@import './common/gzcss-norm.scss';
+
+// 引入覆盖antd金服原有组件的样式
+
+@import './antd-cover/antd-button.scss';
+
+@import './antd-cover/antd-menu.scss';
+
+@import './antd-cover/antd-drawer.scss';
+
+@import './antd-cover/antd-form.scss';
+
+@import './antd-cover/antd-table.scss';
+
+@import './antd-cover/antd-spin.scss';
+
+@import './antd-cover/antd-page.scss';
+
+.w-e-menu {
+	z-index: 101 !important;
+}
+
+.radio-select {
+	.ant-form-item-children {
+		display: flex;
+		align-items: center;
+	}
+
+	.ant-select {
+		width: 39% !important;
+		margin-right: 20px;
+	}
+}

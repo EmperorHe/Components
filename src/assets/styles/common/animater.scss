@@ -1,0 +1,36 @@
+.zv-collapse-top-enter,
+.zv-collapse-top-leave-to {
+	opacity: 0;
+	transform: translate3d(0, -30%, 0);
+}
+.zv-collapse-top-leave,
+.zv-collapse-top-enter-to {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+.zv-collapse-top-enter-active,
+.zv-collapse-top-leave-active {
+	transition: all 0.2s;
+}
+
+// 全局转场动画
+.zv-transition-animate {
+	opacity: 1;
+	transform: translateX(0);
+}
+.zv-transition-animate-enter-active,
+.zv-transition-animate-leave-active {
+	transition: all 0.35s ease-out;
+}
+
+/* 进入开始 */
+.zv-transition-animate-enter {
+	opacity: 0;
+	transform: translateX(80px);
+}
+
+/* 出去终点 */
+.zv-transition-animate-leave-active {
+	opacity: 0;
+	transform: translateX(-80px);
+}
