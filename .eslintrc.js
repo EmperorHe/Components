@@ -406,7 +406,7 @@ module.exports = {
       }
     ],
     'spaced-comment': [
-      2,
+      0,
       'always',
       {
         markers: [

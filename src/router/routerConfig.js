@@ -29,36 +29,44 @@ const baseRouterMap = [
           title: '组件与功能示例'
         },
         children: [
-          // {
-          //   path: '/demo/common/zv-button',
-          //   component: () => import('@/views/docs/zv-button/index'),
-          //   name: 'ZvButton',
-          //   meta: {
-          //     title: 'ZvButton快捷按钮'
-          //   }
-          // },
-          // {
-          //   path: '/demo/common/zv-modal',
-          //   component: () => import('@/views/docs/zv-modal/index'),
-          //   name: 'ZvModal',
-          //   meta: {
-          //     title: 'ZvModal弹窗组件'
-          //   }
-          // },
-          // {
-          //   path: '/demo/common/zv-pdf',
-          //   component: () => import('@/views/docs/zv-pdf/index'),
-          //   name: 'ZvPdf',
-          //   meta: {
-          //     title: 'ZvPdf组件'
-          //   }
-          // },
           {
             path: '/demo/common/scroll-table',
             component: () => import('@/views/docs/scroll-table/index'),
             name: 'ScrollTable',
             meta: {
               title: 'scroll-table组件(不分页渲染大量数据)'
+            }
+          }
+        ]
+      },
+      {
+        path: '/gzcss',
+        component: RouteView,
+        name: 'Gzcss',
+        meta: { title: 'Gzcss中相关组件' },
+        children: [
+          {
+            path: '/gzcss/zv-button',
+            component: () => import('@/views/docs/zv-button/index'),
+            name: 'ZvButton',
+            meta: {
+              title: 'ZvButton快捷按钮'
+            }
+          },
+          {
+            path: '/gzcss/zv-modal',
+            component: () => import('@/views/docs/zv-modal/index'),
+            name: 'ZvModal',
+            meta: {
+              title: 'ZvModal弹窗组件'
+            }
+          },
+          {
+            path: '/gzcss/zv-pdf',
+            component: () => import('@/views/docs/zv-pdf/index'),
+            name: 'ZvPdf',
+            meta: {
+              title: 'ZvPdf组件'
             }
           }
         ]
