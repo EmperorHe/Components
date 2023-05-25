@@ -31,12 +31,12 @@
         </div>
       </div>
     </div>
-    <zv-load
+    <!-- <zv-load
       :is-show="loading"
       :type-num="1"
       :tips-text="loadText"
       color="#3385ff"
-    />
+    /> -->
   </div>
 </template>
 

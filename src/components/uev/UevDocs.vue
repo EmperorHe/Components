@@ -6,14 +6,14 @@
     <div class="uev-docs-cont" :class="defineClass">
       <slot></slot>
     </div>
-    <zv-drawer
+    <a-drawer
       :title="`${title}说明文档`"
       :visible="visible"
       width="1000px"
       @close="visible = false"
     >
       <uev-mark-html :html="markHtml" />
-    </zv-drawer>
+    </a-drawer>
   </zv-white-blog>
 </template>
 
